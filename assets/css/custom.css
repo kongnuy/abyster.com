@@ -250,3 +250,8 @@ ul.social_icons li  a i{
   border-color: transparent transparent #DDD transparent;
   z-index: 0;
 }
+.navbar-inverse {
+  background: #ffffff;
+  border-color: #187BBD;
+  border-width: 2px;
+}

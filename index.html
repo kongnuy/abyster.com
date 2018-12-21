@@ -23,15 +23,27 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 <![endif]-->
+
 <link rel="stylesheet" href="assets/css/common.css">
 
+<link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css"/>
 
+<style>
+.slick-prev:before,
+.slick-next:before {
+  color: black!important;
+}
 
-
+#title,
+#sub-title,
+#btnShowMore,
+#btnAskQuote {
+    opacity: 0;
+}
+</style>
 </head>
 <body>
-
-
 
 
 <div class="header-secondary navbar-fixed-top" style="background: #0E1A2E;height:50px;">
@@ -51,25 +63,25 @@
                 </nav>   
             </div>
             <div class="col-lg-3">
-                    <nav class="pull-right">
-                            <ul class="nav nav-horizontal">
-                                <li id="menu-item-639" class="menu-item">
-                                    <a href="https://www.facebook.com/abysterinc/" target="_blank">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li id="menu-item-655" class="menu-item">
-                                    <a href="https://www.twitter.com/abysterinc/" target="_blank">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li id="menu-item-639" class="menu-item">
-                                    <a href="https://www.youtube.com/channel/UCy__OqbQS8iMOQSjR1rU4EA" target="_blank">
-                                        <i class="fa fa-youtube"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>  
+                <nav class="pull-right">
+                    <ul class="nav nav-horizontal">
+                        <li id="menu-item-639" class="menu-item">
+                            <a href="https://www.facebook.com/abysterinc/" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li id="menu-item-655" class="menu-item">
+                            <a href="https://www.twitter.com/abysterinc/" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li id="menu-item-639" class="menu-item">
+                            <a href="https://www.youtube.com/channel/UCy__OqbQS8iMOQSjR1rU4EA" target="_blank">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>  
             </div>
             <div class="col-lg-3">
                 <a href="contact.php" class="btn btn-action pull-left" style="float:right;margin-top:-5px;">Contactez-nous</a>
@@ -78,15 +90,6 @@
     </div>
 
 </div>
-
-
-
-
-
-
-
-
-
 <div class="navbar navbar-inverse headroom" >
 	<div class="container">
 		<div class="navbar-header">
@@ -117,14 +120,14 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h1>N'ignorez pas vos rêves</h1>
+                <h1 id="title">N'ignorez pas vos rêves</h1>
             </div>
         </div>
 
         <div class="row" style="margin-top: 20px;">
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
-                <p>
+                <p id="sub-title">
                    Confiez vos projets informatques aux professionnels qui s'appliquent chaque jour à fournir 
                    à leurs clients des solutions les plus innovantes et adaptées à leurs besoins.
                 </p>
@@ -135,13 +138,14 @@
         <div class="row"style="margin-top: 40px;" >
             <div class="col-lg-4"></div>
             <div class="col-lg-2">
-                <a href="contact.php" class="btn btn-primary" style="width: 100%;">En savoir plus</a>
+                <a id="btnShowMore" href="contact.php" class="btn btn-primary" style="width: 100%;">En savoir plus</a>
             </div>
             <div class="col-lg-2">
-                <a href="contact.php" class="btn btn-success" style="width: 120%;">Demander un devis</a>
+                <a id="btnAskQuote" href="contact.php" class="btn btn-success" style="width: 120%;">Demander un devis</a>
             </div>
             <div class="col-lg-4"></div>
         </div>
+
     </div>
 </header>
 
@@ -190,9 +194,9 @@
 
 <section>
 <div class="container">
-<div class="row">
-        <div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
+<div id="slideServices" class="row">
+    <div class="col-xs-18 col-sm-6 col-md-4">
+        <div class="thumbnail">
             <img src="assets/images/mobile.png" alt="">
               <div class="caption">
                 <h4>Développement mobile</h4>
@@ -226,6 +230,17 @@
           </div>
         </div> 
         
+        <div class="col-xs-18 col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="assets/images/ecommerce.jpg" alt="">
+              <div class="caption">
+                <h4>E-commerce </h4>
+                <p style="text-align:justify;">Développement de boutiques en ligne sous Prestashop. Fourniture d'une solution de paiement électronique via Mobile Money pour l'Afrique....</p>  
+            </div>
+            <a href="services.php" class="btn btn-primary">En savoir plus</a>
+          </div>
+        </div> 
+
       </div><!-- End row -->
     </div>
 
@@ -236,7 +251,7 @@
         </div>
     </div>
     </div>
-    </section>
+</section>
 
 
 <div class="container-fluid">
@@ -250,48 +265,61 @@
 
 
 <section>
-<div class="container">
-<div class="row">
-<div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/logo-prestashop-orang.png" alt="">
-                <div class="caption">
-                <h4>Prestashop Orange money CMR  </h4>
-                <p style="text-align:justify;">Ce plugin offre un moyen simple et sécurisé d'accepter les paiements par Orange Money Cameroun sur un site Prestashop.  Pour l'intégrer à votre site web, vous...</p>  
-                </div>
-            <a href="listeplugin.php" class="btn btn-primary">En savoir plus</a>
-          </div>
-         
-</div> 
-<div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/logo-mtn-prestashop.png" alt="">
-                <div class="caption">
-                <h4>Prestashop MTN Mobile Money CMR</h4>
-                <p style="text-align:justify;">Plugin pour la boutique en ligne Prestashop, permettant de recevoir simplement des paiements via MTN Mobile Money au Cameroun...</p>  
-                </div>
-            <a href="listeplugin.php" class="btn btn-primary">En savoir plus</a>
-          </div>
-</div> 
-<div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/woocommerce-mtn.png" alt="">
-              <div class="caption">
-                <h4>Woocommerce MTN Mobile Money CMR  </h4>
-                <p style="text-align:justify;">Plugin pour la boutique en ligne WooCommerce sous WordPress, pour pouvoir ajouter un moyen de paiement MTN Mobil Money Cameroun...</p>  
-            </div>
-            <a href="listeplugin.php" class="btn btn-primary">En savoir plus</a>
-          </div>
-</div> 
-</div>
-</div>
+    <div class="container">
+        <div id="slidePlugins" class="row">
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-2" style="float: right;">
-        <a href="listeplugin.php" class="btn btn-default btn-block">Tous les plugins</a> 
+                <div class="col-xs-18 col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="assets/images/logo-prestashop-orang.png" alt="">
+                        <div class="caption">
+                            <h4>Prestashop Orange money CMR  </h4>
+                            <p style="text-align:justify;">Ce plugin offre un moyen simple et sécurisé d'accepter les paiements par Orange Money Cameroun sur un site Prestashop.  Pour l'intégrer à votre site web, vous...</p>  
+                        </div>
+                        <a href="listeplugin.php" class="btn btn-primary">En savoir plus</a>
+                    </div>   
+                </div> 
+
+                <div class="col-xs-18 col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="assets/images/logo-mtn-prestashop.png" alt="">
+                        <div class="caption">
+                            <h4>Prestashop MTN Mobile Money CMR</h4>
+                            <p style="text-align:justify;">Plugin pour la boutique en ligne Prestashop, permettant de recevoir simplement des paiements via MTN Mobile Money au Cameroun...</p>  
+                        </div>
+                        <a href="listeplugin.php" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div> 
+
+                <div class="col-xs-18 col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="assets/images/woocommerce-mtn.png" alt="">
+                        <div class="caption">
+                            <h4>Woocommerce MTN Mobile Money CMR  </h4>
+                            <p style="text-align:justify;">Plugin pour la boutique en ligne WooCommerce sous WordPress, pour pouvoir ajouter un moyen de paiement MTN Mobil Money Cameroun...</p>  
+                        </div>
+                        <a href="listeplugin.php" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div> 
+
+                <div class="col-xs-18 col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="assets/images/logo-mtn-prestashop.png" alt="">
+                        <div class="caption">
+                            <h4>MTN Mobile Money Cote d'Ivoire</h4>
+                            <p style="text-align:justify;">Plugin pour la boutique en ligne Prestashop, permettant de recevoir simplement des paiements via MTN Mobile Money en Côte d'Ivoire...</p>  
+                        </div>
+                        <a href="listeplugin.php" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div> 
+            </div>
         </div>
-    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2" style="float: right;">
+                <a href="listeplugin.php" class="btn btn-default btn-block">Tous les plugins</a> 
+            </div>
+        </div>
     </div>
 </section>
 
@@ -308,66 +336,65 @@
 
 
 <section>
-<div class="container">
-<div class="col-md-12">
-                    <div class="row">
-                        <div class="portfolio-items isotopeWrapper clearfix" id="3">
-<ul>
-
-                            <li class="col-sm-4 isotopeItem mobile">
-                                <div class="portfolio-item">
-                                    <img src="assets/images/portfolio/img1.png" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="assets/images/portfolio/img1.png" class="fancybox">
-                                                <h5>Boite de Musique sous Android.</h5>
-                                                <i class="fa fa-link fa-2x"></i></a>
-                                        </div>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="portfolio-items isotopeWrapper clearfix" id="3">
+                    <ul id="slideProjets">
+                        <li class="col-sm-4 isotopeItem mobile">
+                            <div class="portfolio-item">
+                                <img src="assets/images/portfolio/img1.png" alt="" />
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <a href="assets/images/portfolio/img1.png" class="fancybox">
+                                        <h5>Boite de Musique sous Android.</h5>
+                                        <i class="fa fa-link fa-2x"></i></a>
                                     </div>
                                 </div>
-                            </li>
+                            </div>
+                        </li>
 
-                            <li class="col-sm-4 isotopeItem photography">
-                                <div class="portfolio-item">
-                                    <img src="assets/images/portfolio/automatebills.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="assets/images/portfolio/automatebills.jpg" class="fancybox">
-                                                <h5>Automatebills</h5>
-                                                <i class="fa fa-link fa-2x"></i></a>
+                                    <li class="col-sm-4 isotopeItem photography">
+                                        <div class="portfolio-item">
+                                            <img src="assets/images/portfolio/automatebills.jpg" alt="" />
+                                            <div class="portfolio-desc align-center">
+                                                <div class="folio-info">
+                                                    <a href="assets/images/portfolio/automatebills.jpg" class="fancybox">
+                                                        <h5>Automatebills</h5>
+                                                        <i class="fa fa-link fa-2x"></i></a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </li>
+                                    </li>
 
 
-                            <li class="col-sm-4 isotopeItem mobile">
-                                <div class="portfolio-item">
-                                    <img src="assets/images/portfolio/img3.png" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="assets/images/portfolio/img3.png" class="fancybox">
-                                                <h5>Version Mobile du site de vente en ligne FirstLuxe</h5>
-                                                <i class="fa fa-link fa-2x"></i></a>
+                                    <li class="col-sm-4 isotopeItem mobile">
+                                        <div class="portfolio-item">
+                                            <img src="assets/images/portfolio/img3.png" alt="" />
+                                            <div class="portfolio-desc align-center">
+                                                <div class="folio-info">
+                                                    <a href="assets/images/portfolio/img3.png" class="fancybox">
+                                                        <h5>Version Mobile du site de vente en ligne FirstLuxe</h5>
+                                                        <i class="fa fa-link fa-2x"></i></a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </li>
-                            </ul>
-                        </div>
-
-                    </div>
+                                    </li>
+                                    
 
 
+                    </ul>
                 </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-2" style="float: right;">
-        <a href="portfolio.php" class="btn btn-default btn-block">Tous les projets</a> 
+            </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2" style="float: right;">
+            <a href="portfolio.php" class="btn btn-default btn-block">Tous les projets</a> 
+            </div>
+        </div>
     </div>
 </section>
 
@@ -380,7 +407,6 @@
         </div>
     </div>
 </div>
-
 
 
 <footer id="footer" class="top-space">
@@ -483,10 +509,9 @@
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<!-- Google Maps -->
 	<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>-->
-	
-</body>
-</html>
 
+    <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/TweenLite.min.js"></script>
 
 
 <script>
@@ -495,5 +520,35 @@
         var li = $(".navbar-nav li")[0];
         $(li).addClass('current');
 
+        $('#slidePlugins').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true
+        });
+
+        $('#slideServices').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true
+        });
+
+    
+
+        var tl = new TimelineLite();
+        tl.to($("#title"), .1, {y: -300}, .1)
+          .to($("#sub-title"), .1, {y: 300}, .1)
+          .to($("#btnShowMore"), .1, {x: -100}, .1)
+          .to($("#btnAskQuote"), .1, {x: 100}, .1)
+       
+          .to($("#title"), 2, {y: 0, autoAlpha: 1}, 1.1)
+          .to($("#sub-title"), 2, {y: 0, autoAlpha: 1}, 1.1)
+          .to($("#btnShowMore"), 2, {x: 0, autoAlpha: 1}, 2.1)
+          .to($("#btnAskQuote"), 2, {x: 0, autoAlpha: 1}, 2.1);
     });
 </script>
+</body>
+</html>
