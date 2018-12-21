@@ -30,18 +30,11 @@
 <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css"/>
 
 <style>
-.slick-prev:before,
-.slick-next:before {
-  color: black!important;
-}
 
-#title,
-#sub-title,
-#btnShowMore,
-#btnAskQuote {
-    opacity: 0;
-}
+
+
 </style>
+
 </head>
 <body>
 
@@ -90,8 +83,9 @@
     </div>
 
 </div>
+
 <div class="navbar navbar-inverse headroom" >
-	<div class="container">
+	<div class="container" style="padding-right: 0px;">
 		<div class="navbar-header">
 			<!-- Button for smallest screens -->
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" style="border-color:#333;background-color:#333;" aria-expanded="false">
@@ -101,13 +95,23 @@
 			</button>
 			<a class="navbar-brand" href="index.php"><img src="assets/images/logo.png" alt="Retro HTML5 template"></a>
 		</div>
-		<div class="navbar-collapse collapse">
+		<div class="navbar-collapse collapse" style="padding-right: 0px;">
 			<ul class="nav navbar-nav pull-right">
 				<li><a href="index.php">Accueil</a></li>
 				<li><a href="services.php">Services</a></li>
 				<li><a href="formation.php">Formations</a></li>
 				<li><a href="portfolio.php">Projets</a></li>
-				<li><a href="listeplugin.php">Plugins</a></li>					
+				
+				<li class="dropdown">
+					<a href="listeplugin.php" class="dropdown-toggle" data-toggle="dropdown">Produits et services <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="listeplugin.php">Plugins</a></li>
+						<li><a href="http://mobilemoney.abyster.com" target="_blank">AByster Mobile Money </a></li>
+						<li><a href="listeplugin.php">AByster Wallet</a></li>
+						<li><a href="https://automatebills.com" target="_blank">AutomateBills</a></li>
+					</ul>
+				</li>		
+
 				<li><a href="contact.php">Contact</a></li>	
 			</ul>
 		</div><!--/.nav-collapse -->
@@ -516,7 +520,7 @@
 
 <script>
     $(document).ready(function () {
-        $(".navbar-nav li").removeClass();
+      //  $(".navbar-nav li").removeClass();
         var li = $(".navbar-nav li")[0];
         $(li).addClass('current');
 
@@ -536,7 +540,19 @@
         arrows: true
         });
 
-    
+        $('.dropdown-toggle').click(function(e) {
+            if ($(document).width() > 768) {
+                e.preventDefault();
+
+                var url = $(this).attr('href');
+
+                if (url !== '#') {
+                
+                window.location.href = url;
+                }
+
+            }
+        });
 
         var tl = new TimelineLite();
         tl.to($("#title"), .1, {y: -300}, .1)
@@ -550,5 +566,6 @@
           .to($("#btnAskQuote"), 2, {x: 0, autoAlpha: 1}, 2.1);
     });
 </script>
+
 </body>
 </html>
