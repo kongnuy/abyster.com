@@ -1,11 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport"    content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Accueil | AByster Consulting">
+
 <meta name="author" content="AByster">
-<title>Accueil | AByster Consulting</title>
 <link rel="shortcut icon" href="assets/images/favicon.png">
 <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 <link rel="stylesheet" type="text/css" href="assets/css/isotope.css" media="screen" />
@@ -17,6 +18,8 @@
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -24,13 +27,13 @@
 	<script src="assets/js/respond.min.js"></script>
 <![endif]-->
 
-<link rel="stylesheet" href="assets/css/common.css">
+<meta name="description" content="Accueil | AByster Consulting">
+<title>Accueil | AByster Consulting</title>
 
 <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css"/>
 
 <style>
-
 
 
 </style>
@@ -41,51 +44,51 @@
 
 <div class="header-secondary navbar-fixed-top" style="background: #0E1A2E;height:50px;">
 
-    <div class="container clearfix">
-        <div class="row">
-            <div class="col-lg-6">
-                <nav class="pull-left">
-                    <ul class="nav nav-horizontal">
-                        <li id="menu-item-652" class="menu-item">
-                            <a>Appeler: 0033 661212038</a>
-                        </li>
-                        <li id="menu-item-653" class="menu-item">
-                            <a>contact@abyster.com</a>
-                        </li>
-                    </ul>
-                </nav>   
-            </div>
-            <div class="col-lg-3">
-                <nav class="pull-right">
-                    <ul class="nav nav-horizontal">
-                        <li id="menu-item-639" class="menu-item">
-                            <a href="https://www.facebook.com/abysterinc/" target="_blank">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li id="menu-item-655" class="menu-item">
-                            <a href="https://www.twitter.com/abysterinc/" target="_blank">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li id="menu-item-639" class="menu-item">
-                            <a href="https://www.youtube.com/channel/UCy__OqbQS8iMOQSjR1rU4EA" target="_blank">
-                                <i class="fa fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>  
-            </div>
-            <div class="col-lg-3">
-                <a href="contact.php" class="btn btn-action pull-left" style="float:right;margin-top:-5px;">Contactez-nous</a>
-            </div>
-        </div>
-    </div>
+<div class="container clearfix">
+	<div class="row">
+		<div class="col-md-6">
+			<nav class="pull-left">
+				<ul class="nav nav-horizontal">
+					<li id="contact-item1" class="menu-item">
+						<a>Appeler: 0033 661212038</a>
+					</li>
+					<li id="contact-item2" class="menu-item">
+						<a>contact@abyster.com</a>
+					</li>
+				</ul>
+			</nav>   
+		</div>
+		<div id="socialIcons" class="col-md-3">
+			<nav class="pull-right">
+				<ul class="nav nav-horizontal">
+					<li id="menu-item-639" class="menu-item">
+						<a href="https://www.facebook.com/abysterinc/" target="_blank">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li id="menu-item-655" class="menu-item">
+						<a href="https://www.twitter.com/abysterinc/" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li id="menu-item-639" class="menu-item">
+						<a href="https://www.youtube.com/channel/UCy__OqbQS8iMOQSjR1rU4EA" target="_blank">
+							<i class="fa fa-youtube"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>  
+		</div>
+		<div id="btnContact" class="col-md-3">
+			<a href="contact.php" class="btn btn-action pull-left" style="float:right;margin-top:-5px;">Contactez-nous</a>
+		</div>
+	</div>
+</div>
 
 </div>
 
 <div class="navbar navbar-inverse headroom" >
-	<div class="container" style="padding-right: 0px;">
+	<div class="container" style="padding-right: 0px; padding-left: 0px;">
 		<div class="navbar-header">
 			<!-- Button for smallest screens -->
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" style="border-color:#333;background-color:#333;" aria-expanded="false">
@@ -95,7 +98,7 @@
 			</button>
 			<a class="navbar-brand" href="index.php"><img src="assets/images/logo.png" alt="Retro HTML5 template"></a>
 		</div>
-		<div class="navbar-collapse collapse" style="padding-right: 0px;">
+		<div class="navbar-collapse collapse" style="padding-right: 0px; padding-left: 0px;">
 			<ul class="nav navbar-nav pull-right">
 				<li><a href="index.php">Accueil</a></li>
 				<li><a href="services.php">Services</a></li>
@@ -112,7 +115,7 @@
 					</ul>
 				</li>		
 
-				<li><a href="contact.php">Contact</a></li>	
+				<li id="contact-item"><a href="contact.php">Contact</a></li>	
 			</ul>
 		</div><!--/.nav-collapse -->
 	</div>
@@ -123,31 +126,34 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-md-12">
                 <h1 id="title">N'ignorez pas vos rêves</h1>
             </div>
         </div>
 
         <div class="row" style="margin-top: 20px;">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-6">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
                 <p id="sub-title">
                    Confiez vos projets informatques aux professionnels qui s'appliquent chaque jour à fournir 
                    à leurs clients des solutions les plus innovantes et adaptées à leurs besoins.
                 </p>
             </div>
-            <div class="col-lg-3"></div>
+            <div class="col-md-3"></div>
         </div>
 
+
+
+
         <div class="row"style="margin-top: 40px;" >
-            <div class="col-lg-4"></div>
-            <div class="col-lg-2">
-                <a id="btnShowMore" href="contact.php" class="btn btn-primary" style="width: 100%;">En savoir plus</a>
+            <div class="col-md-4"></div>
+            <div class="col-md-2">
+                <a id="btnShowMore" href="contact.php" class="btn btn-primary">En savoir plus</a>
             </div>
-            <div class="col-lg-2">
-                <a id="btnAskQuote" href="contact.php" class="btn btn-success" style="width: 120%;">Demander un devis</a>
+            <div class="col-md-2">
+                <a id="btnAskQuote" href="contact.php" class="btn btn-success">Demander un devis</a>
             </div>
-            <div class="col-lg-4"></div>
+            <div class="col-md-4"></div>
         </div>
 
     </div>
@@ -155,7 +161,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-12 section-title">
+        <div class="col-md-12 section-title">
             <h1>Qui somme nous?</h1>
             <div class="line"></div>
         </div>
@@ -165,21 +171,23 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <img src="assets/images/spotlight.jpg" alt="" class="img-responsive">
+            <div class="col-sm-4">
+                <img id="presentationImage" src="assets/images/spotlight.jpg" alt="" class="img-responsive">
             </div>
-            <div class="col-lg-8">
-            <p>AByster Consulting est la branche de l'entreprise <a href="http://www.abyster.com" title="AByster">AByster</a> sp&eacute;cialis&eacute;e dans
-			     le conseil, la formation et l'accompagnement des entreprises dans la r&eacute;alisation de projets IT. Nous nous appliquons chaque jour à faire que nos services informatiques 
-                soient de qualités, et à fournir à nos clients les solutions informatiques les plus innovantes et les 
-                mieux adaptées à leurs besoins.</p>
+            <div class="col-sm-8">
+                <p id="presentationText"> 
+                    AByster Consulting est la branche de l'entreprise <a href="http://www.abyster.com" title="AByster">AByster</a> sp&eacute;cialis&eacute;e dans
+                    le conseil, la formation et l'accompagnement des entreprises dans la r&eacute;alisation de projets IT. Nous nous appliquons chaque jour à faire que nos services informatiques 
+                    soient de qualités, et à fournir à nos clients les solutions informatiques les plus innovantes et les 
+                    mieux adaptées à leurs besoins.
+                </p>
             </div>
         </div>
     </div>
 
     <div class="container">
     <div class="row">
-        <div class="col-lg-2" style="float: right;">
+        <div class="col-md-2" style="float: right;">
         <a href="about.php" class="btn btn-default btn-block">Lire plus</a> 
         </div>
     </div>
@@ -188,7 +196,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-12 section-title">
+        <div class="col-md-12 section-title">
             <h1>Nos services</h1>
             <div class="line"></div>
         </div>
@@ -250,7 +258,7 @@
 
     <div class="container">
     <div class="row">
-        <div class="col-lg-2" style="float: right;">
+        <div class="col-md-2" style="float: right;">
         <a href="services.php" class="btn btn-default btn-block">Tous les services</a> 
         </div>
     </div>
@@ -260,7 +268,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-12 section-title">
+        <div class="col-md-12 section-title">
             <h1>Nos plugins</h1>
             <div class="line"></div>
         </div>
@@ -320,7 +328,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-2" style="float: right;">
+            <div class="col-md-2" style="float: right;">
                 <a href="listeplugin.php" class="btn btn-default btn-block">Tous les plugins</a> 
             </div>
         </div>
@@ -330,7 +338,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-12 section-title">
+        <div class="col-md-12 section-title">
             <h1>Nos projets</h1>
             <div class="line"></div>
         </div>
@@ -395,7 +403,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-2" style="float: right;">
+            <div class="col-md-2" style="float: right;">
             <a href="portfolio.php" class="btn btn-default btn-block">Tous les projets</a> 
             </div>
         </div>
@@ -404,14 +412,13 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-12 section-title">
+        <div class="col-md-12 section-title">
             <h2>Un projet à nous soumettre?</h2>
             <p>Contactez-nous dès a présent pour obtenir un dévis.</p>
             <a href="contact.php" class="btn btn-success">Demander un devis</a>
         </div>
     </div>
 </div>
-
 
 <footer id="footer" class="top-space">
 
@@ -520,7 +527,7 @@
 
 <script>
     $(document).ready(function () {
-      //  $(".navbar-nav li").removeClass();
+
         var li = $(".navbar-nav li")[0];
         $(li).addClass('current');
 
@@ -529,30 +536,48 @@
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        arrows: true
+        arrows: true,
+        responsive: [
+                        {
+                            breakpoint: 1200,
+                            settings: 
+                                {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 1
+                                }
+                        },
+
+                        {
+                            breakpoint: 768,
+                            settings: "unslick"
+                        }
+                    ]
         });
+
 
         $('#slideServices').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        arrows: true
+        arrows: true,
+        responsive: [
+                        {
+                            breakpoint: 1200,
+                            settings: 
+                                {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 1
+                                }
+                        },
+
+                        {
+                            breakpoint: 768,
+                            settings: "unslick"
+                        }
+                    ]
         });
 
-        $('.dropdown-toggle').click(function(e) {
-            if ($(document).width() > 768) {
-                e.preventDefault();
-
-                var url = $(this).attr('href');
-
-                if (url !== '#') {
-                
-                window.location.href = url;
-                }
-
-            }
-        });
 
         var tl = new TimelineLite();
         tl.to($("#title"), .1, {y: -300}, .1)
@@ -564,7 +589,31 @@
           .to($("#sub-title"), 2, {y: 0, autoAlpha: 1}, 1.1)
           .to($("#btnShowMore"), 2, {x: 0, autoAlpha: 1}, 2.1)
           .to($("#btnAskQuote"), 2, {x: 0, autoAlpha: 1}, 2.1);
+        
+
+        $(window).resize(function () {
+            if ($(window).width() < 768) {
+               
+               for (var i = 0; i < 4; i++) {
+                   console.log($("div#slideServices > div"));
+               }
+           } else {
+                $('#slideServices').not('.slick-initialized').slick('resize');
+                $('#slidePlugins').not('.slick-initialized').slick('resize');
+           }
+
+
+           
+        });
+
+        $(window).on('orientationchange', function () {
+            $('#slideServices').not('.slick-initialized').slick('resize');
+            $('#slidePlugins').not('.slick-initialized').slick('resize');
+        });
+        //console.log($("div#slideServices > div")[0]);
     });
+
+
 </script>
 
 </body>

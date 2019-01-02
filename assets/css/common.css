@@ -32,9 +32,6 @@
     background-color: inherit;
     color: #fff;
 }
-.navbar-nav li{
-    padding: 10px 0px;
-}
 
 .navbar-inverse {
     top: 50px;
@@ -163,6 +160,10 @@ section{
     color: #00253D;
     background: #ccc;
 }
+
+/* .navbar-nav>li>a:focus {
+    color: #00253D;
+} */
 @media only screen and (min-width: 768px) {
     li.dropdown:hover > ul.dropdown-menu {
         display: block;

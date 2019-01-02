@@ -1,0 +1,133 @@
+@media (max-width: 1200px) {
+
+  .container {
+      width: 100%;
+  }
+
+  .row {
+      width: 100%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 991px) {
+  #btnShowMore {
+      margin-right: 20px;
+  }
+  #btnAskQuote {
+      margin-left: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  #btnShowMore {
+      margin-bottom: 15px;
+      padding: 10px 60px;
+  }
+
+  #socialIcons {
+      float: left;
+  }
+
+  #btnContact {
+      float: left;
+  }
+
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+
+.container>.navbar-header {
+  margin-left: 35%;
+  margin-right: 35%;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.navbar-collapse>ul {
+      float: left!important;
+      margin-left: 15%;  
+}
+
+.navbar-inverse .navbar-brand img {
+  width: 90%; 
+  height: auto;
+}
+}
+
+@media (max-width: 886px) {
+
+  #socialIcons {
+  display: none; 
+  }
+
+  #btnContact {
+  float: right;
+  }
+
+}
+
+@media (max-width: 768px) {
+ .navbar-inverse .navbar-brand img {
+  width: 90%; 
+  height: auto;
+}
+
+.navbar-inverse .container {
+  margin-left: 5%; 
+  margin-right: 5%;
+  width: 90%;
+}
+
+#presentationImage {
+    width: 100%;
+    height: auto;
+}
+
+#presentationText {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+ul.navbar-nav li {
+  width: 35%;
+  margin-left: 32.5%;
+  text-align: center;
+}
+
+.thumbnail>img {
+  width: 80%;
+  height: auto;
+}
+}
+
+@media (max-width: 673px) {
+
+  #contact-item1 {
+  display: none; 
+  }
+
+  .navbar-inverse .navbar-brand img {
+      width: 80%; 
+      height: auto;
+  }
+
+  #btnAskQuote {
+      margin-bottom: 25px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  #contact-item2 {
+      display: none; 
+  }
+
+  .navbar-inverse .navbar-brand img {
+      width: 60%; 
+      height: auto;
+  }
+
+}
+
