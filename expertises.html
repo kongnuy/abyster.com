@@ -106,7 +106,7 @@
 						<li><a href="services.html">Services</a></li>
 						<li><a href="expertises.html">Expertises</a></li>
 					</ul>
-				</li>		
+				</li>	
 				<li><a href="formation.php">Formations</a></li>
 				<li><a href="portfolio.php">Projets</a></li>
 				
@@ -135,7 +135,8 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Services</li>
+              <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Expertises</li>
             </ol>
           </nav>
         </div>
@@ -145,82 +146,42 @@
 <!-- Fin fil d'ariane -->
 
 
-    <div class="container serviceslist">
-
-      <div class="row">
+ <div class="container">
+    <div class="row">
         <div class="col-md-12">
           <header class="page-header">
-            <h1 class="page-title">Services</h1>
+            <h1 class="page-title">Expertises</h1>
           </header>
-        <p style="margin-bottom:40px;">Trouvez ci-dessous la  liste non significative de nos principales prestations informatiques.</p>
+        <p style="margin-bottom:40px;">Trouvez ci-dessous la  liste non significative de nos principaux domaines d'expertise.</p>
         </div>
-      </div> 
+    </div> 
 
-      <div class="row">
-        <div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/mobile.png" alt="">
-              <div class="caption">
-                <h4>Développement mobile</h4>
-                <p style="text-align:justify;">Quel que soit votre secteur d'activité, vos éventuels clients sont toujours en mouvement, nous vous permettons de rester proche de ces derniers en développant pour vous des applications mobiles pour smartphone, iphone ou windows phone.</p>  
-            </div>
-          </div>
-        </div> 
-		
-		<div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/img4.jpg" alt="">
-              <div class="caption">
-                <h4>Etude et conseils</h4>
-                <p style="text-align:justify;">Mise en place des systèmes d’information, développement et audits des sites web. Conseils et accompagnement dans la mise en place et/ou la migration des systèmes d’information.</p> 
-            </div>
-          </div>
-        </div>
-        
-		<div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/dev.png" alt="">
-              <div class="caption">
-                <h4>Développement de logiciel informatiques </h4>
-                <p style="text-align:justify;">Analyse, conception, développement, déploiement et
-                  maintenance d’applications informatique. Rédactions
-                  des spécifications fonctionnelles et techniques. Réalisation des projets en mode agile.</p>  
-            </div>
-          </div>
-        </div> 
-        
-      </div><!-- End row -->
-      
-	  <div class="row">
-	  
-	  
-		<div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/01.jpg" alt="">
-              <div class="caption">
-                <h4>Installation et configuration de logiciel </h4>
-                <p><ul><li>Logiciel de gestion d’entreprise ;</li>
-						<li>Logiciel open source ;</li>
-						<li>Logiciel informatique.</li></ul></p> 
-            </div>
-          </div>
-        </div>
-		
-        <div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/ecommerce.jpg" alt="">
-              <div class="caption">
-                <h4>E-commerce</h4>
-                <p style="text-align:justify;">Développement de boutiques en ligne sous Prestashop. Fourniture d'une solution de paiement électronique via Mobile Money pour l'Afrique.</p> 
-            </div>
-          </div>
-        </div>
-        
-		
-      </div><!-- End row -->
-      
-    </div><!-- End container -->
- 
+    <div id="slideExpertises" class="row">
+      <div class="col-md-4">
+        <img src="./assets/images/logos_expertises/expertises1.png" alt="Logo expertises1">
+      </div>
+      <div class="col-md-4">
+        <img src="./assets/images/logos_expertises/expertises2.png" alt="Logo expertises2">
+      </div>
+      <div class="col-md-4">
+        <img src="./assets/images/logos_expertises/expertises3.png" alt="Logo expertises3">
+      </div>
+      <div class="col-md-4">
+        <img src="./assets/images/logos_expertises/expertises4.png" alt="Logo expertises4">
+      </div>
+      <div class="col-md-4">
+        <img src="./assets/images/logos_expertises/expertises5.png" alt="Logo expertises5">
+      </div>
+      <div class="col-md-4">
+        <img src="./assets/images/logos_expertises/expertises6.png" alt="Logo expertises6">
+      </div>
+      <div class="col-md-4">
+        <img src="./assets/images/logos_expertises/expertises7.png" alt="Logo expertises7">
+      </div>
+    </div>
+ </div>
+	
+
  <footer id="footer" class="top-space">
 
 <div class="footer1">
@@ -322,12 +283,56 @@
 <!-- Google Maps -->
 <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>-->
 
+  <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/TweenLite.min.js"></script>
 
   <script>
 
   $(document).ready(function(){
     var li=$(".navbar-nav li")[1];
     $(li).addClass('current');
+
+    $('#slideExpertises').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        responsive: [
+                        {
+                            breakpoint: 1200,
+                            settings: 
+                                {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 1
+                                }
+                        },
+
+                        {
+                            breakpoint: 768,
+                            settings: "unslick"
+                        }
+                    ]
+        });
+
+    
+        $(window).resize(function () {
+            if ($(window).width() < 768) {
+               
+               for (var i = 0; i < 4; i++) {
+                   console.log($("div#slideExpertises > div"));
+               }
+           } else {
+                $('#slideExpertises').not('.slick-initialized').slick('resize');
+           }
+
+
+           
+        });
+
+        $(window).on('orientationchange', function () {
+            $('#slideExpertises').not('.slick-initialized').slick('resize');
+        });
   });
   
   </script>
