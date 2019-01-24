@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+
+<meta name="author" content="AByster">
+<link rel="shortcut icon" href="assets/images/favicon.png">
+<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" type="text/css" href="assets/css/isotope.css" media="screen" />
+<link rel="stylesheet" href="assets/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Custom styles for our template -->
+<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+
+<meta name="description" content="Wallet | AByster Consulting">
+
+<title>Wallet | AByster Consulting</title>
+
+<style>
+.col-md-12 iframe{
+  width: 70%;
+  height: 415px;
+  margin-left: 15%;
+  margin-right: 15%;
+} 
+
+.row .col-md-3 img{
+  width: 50%;
+}
+
+#pricing_table{
+  width: 80%;
+  margin: 20px 10%;
+  text-align: center;
+  border-collapse: unset;
+  border: 0;
+}
+#pricing_table tr td {
+  width: 15%;
+}
+
+#pricing_table tr td:nth-child(3n) {
+  color: #ffad33;
+  font-weight: bold;
+}
+
+#pricing_table tr td:nth-child(5n) {
+  color: #428bca;
+  font-weight: bold;
+}
+
+#pricing_table tr td:nth-child(7n) {
+  color: #5cb85c;
+  font-weight: bold;
+}
+
+.table>tbody>tr>td{
+  vertical-align: middle;
+  border-top: 0px solid #ddd;
+  padding: 8px 5px;
+}
+.feature{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.feature h5{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+#feature_essai{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffad33;
+  color: #fff!important;
+}
+
+#feature_basic{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #428bca;
+  color: #fff!important;
+}
+
+#feature_premiuim{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #5cb85c;
+  color: #fff!important;
+}
+
+</style>
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	
+<div class="header-secondary navbar-fixed-top" style="background: #0E1A2E;height:50px;">
+
+<div class="container clearfix">
+	<div class="row">
+		<div class="col-md-6">
+			<nav class="pull-left">
+				<ul class="nav nav-horizontal">
+					<li id="contact-item1" class="menu-item">
+						<a>Appeler: 0033 661212038</a>
+					</li>
+					<li id="contact-item2" class="menu-item">
+						<a>contact@abyster.com</a>
+					</li>
+				</ul>
+			</nav>   
+		</div>
+		<div id="socialIcons" class="col-md-3">
+			<nav class="pull-right">
+				<ul class="nav nav-horizontal">
+					<li id="menu-item-639" class="menu-item">
+						<a href="https://www.facebook.com/abysterinc/" target="_blank">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li id="menu-item-655" class="menu-item">
+						<a href="https://www.twitter.com/abysterinc/" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li id="menu-item-639" class="menu-item">
+						<a href="https://www.youtube.com/channel/UCy__OqbQS8iMOQSjR1rU4EA" target="_blank">
+							<i class="fa fa-youtube"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>  
+		</div>
+		<div id="btnContact" class="col-md-3">
+			<a href="contact.php" class="btn btn-action pull-left" style="float:right;margin-top:-5px;">Contactez-nous</a>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div class="navbar navbar-inverse headroom" >
+	<div class="container" style="padding-right: 0px; padding-left: 0px;">
+		<div class="navbar-header">
+			<!-- Button for smallest screens -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" style="border-color:#333;background-color:#333;" aria-expanded="false">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.php"><img src="assets/images/logo.png" alt="Retro HTML5 template"></a>
+		</div>
+		<div class="navbar-collapse collapse" style="padding-right: 0px; padding-left: 0px;">
+			<ul class="nav navbar-nav pull-right">
+				<li><a href="index.php">Accueil</a></li>
+				<li><a href="services.php">Services</a></li>
+				<li><a href="formation.php">Formations</a></li>
+				<li><a href="portfolio.php">Projets</a></li>
+				
+				<li class="dropdown">
+					<a href="listeplugin.php" class="dropdown-toggle" data-toggle="dropdown">Produits et Solutions <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="listeplugin.php">Plugins</a></li>
+						<li><a href="http://mobilemoney.abyster.com" target="_blank">AByster Mobile Money </a></li>
+						<li><a href="listeplugin.php">AByster Wallet</a></li>
+						<li><a href="https://automatebills.com" target="_blank">AutomateBills</a></li>
+					</ul>
+				</li>		
+
+				<li id="contact-item"><a href="contact.php">Contact</a></li>	
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</div> 
+
+	<!-- /.navbar -->
+
+  <!-- Fil d'ariane -->
+<div class="container-fluid" style="margin-top: 50px;">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.php">Accueil</a></li>
+              <li class="breadcrumb-item"><a href="index.php">Produits et Solutions</a></li>
+              <li class="breadcrumb-item"><a href="index.php">Produits</a></li>
+              <li class="breadcrumb-item active" aria-current="page">AByster Wallet</li>
+            </ol>
+          </nav>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Fin fil d'ariane -->
+
+<div class="container serviceslist">
+  <div class="row">
+    <div class="col-md-12">
+      <header class="page-header">
+			  <h2 class="page-title">Abyster Wallet</h2>
+        <p>Gérer les demandes de transfert Mobile Money de vos clients en toute simplicité.</p>
+		  </header>
+			
+    </div>
+  </div> 
+</div> 
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+    <p>
+      AByster Wallet est une plateforme permettant de piloter l'envoie  de transferts mobile money occasionels  ou régulier 
+      depuis une application ou un système d'information.
+      Elle est une réponse au besoin exprimé par les entreprises de pouvoir automatiser des virements Mobile Money vers 
+      des particuliers et entreprises.
+    </p>
+Exemple :<br>
+<ul>
+  <li>  paiement mensuel des salaires  employés dans une structure. </li>
+  <li>  Reversement quotidien des gains à des paris sportifs. </li>
+  <li>  Versement périodique des primes/bonus à des tiers . </li>
+</ul>
+
+  
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <img src="./assets/images/wallet_archi.png" alt="Architecture de la solution Abyster wallet">
+    </div>
+  </div>
+</div> 
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center">Démonstration</h2><br>
+      <iframe src="https://www.youtube.com/embed/74KncHdTuhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div> 
+
+
+ <br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center">Installation</h2>
+      <p>
+        AByster wallet peut être installée dans votre système d'inforamtion ou en mode Saas 
+        dans le premier cas l'API ainsi que le back office d'administration font partie de votre domaine applicatif 
+        En mode SAAS, AByster se charge de l'hébergement et de la maintenance de l'api et du back office, un compte utilisateur vous ai fourni 
+        pour gérer votre espace client.
+      </p>
+      <img src="./assets/images/api.png" alt="Api" style="width:70%; margin-left: 15%; margin-right: 15%;">
+    </div>
+  </div>
+</div> 
+
+
+
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center">Références</h2> 
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="./assets/images/logos_references/betmomo.png" alt="logo Betmomo">
+    </div>
+    <div class="col-md-3">
+      <img src="./assets/images/logo.png" alt="logo Abyster Consulting"> 
+    </div>
+    <div class="col-md-3">
+      <img src="./assets/images/logos_references/logobaniol.png" alt="logo Baniol" style="margin-top:-30px;">
+    </div>
+    <div class="col-md-3">
+      <img src="./assets/images/logos_references/abyster.jpg" alt="logo Abyster">
+    </div>
+  </div>
+</div> 
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+    <h2 class="text-center">Licence et Tarification</h2>  
+    <p>
+      AByster Wallet est disponible sous forme de souscription annuelle, 
+      Deux formules d'engagement existent
+
+      Basic  300 000 FCFA/an 
+      Premium 900 000 FCFA/an 
+
+      Une version d'évalutaion est disponible pour vous permettre d'évaluer le produit pendant 1 mois gratuitement 
+    </p> 
+    </div>
+  </div>
+  <div class="row">
+     <table id="pricing_table" class="table" borber="0">
+        <tr>
+          <td></td>
+          <td style="width: 2%;"></td>
+          <td id="feature_essai"><span style="font-weight: bolder;">Essai</span> </td>
+
+          <td style="width: 2%;"></td>
+
+          <td id="feature_basic">AByster <span style="font-weight: bolder;">BASIC</span> </td>
+
+          <td style="width: 2%;"></td>
+
+          <td id="feature_premiuim">AByster <span style="font-weight: bolder;">PREMIUIM</span> </td>
+        </tr>
+
+        <tr style="height: 30px;"></tr>
+
+        <tr>
+          <td>
+            <div class="feature">
+              <h5>Deploiement</h5>
+              <p>Deploiement gratuit de l'API sur votre serveur web</p>
+            </div>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>OUI</p>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>OUI</p>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>OUI</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="feature">
+              <h5>Installation Android</h5>
+              <p>Nombre d'appareil android installable</p>
+            </div>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>Illimité</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="feature">
+              <h5>Support</h5>
+              <p>Support fournit 24/7</p>
+            </div>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>NON</p>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>NON</p>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>OUI</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="feature">
+              <h5>Validité</h5>
+              <p>Durée de l'offre</p>
+            </div>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>30 jours</p>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>01 an</p>
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td>
+            <p>01 an</p>
+          </td>
+        </tr>
+        <tr style="height: 20px;"></tr>
+        <tr>
+          <td>
+            
+          </td>
+
+          <td style="width: 2%;"></td>
+
+          <td id="feature_essai"><span style="font-weight: bolder;">Gratuit</span> </td>
+          
+
+          <td style="width: 2%;"></td>
+
+          <td id="feature_basic"><span style="font-weight: bolder;">300 000 FCFA</span> </td>
+
+          <td style="width: 2%;"></td>
+
+          <td id="feature_premiuim"><span style="font-weight: bolder;">900 000 FCFA</span> </td>
+        </tr>
+
+     </table>
+  </div>
+</div> 
+
+<br>
+<div class="container">
+  <div class="row">
+  <div class="col-lg-12">
+  <h2 class="text-center">Demander une Demo</h2>  <br>
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Votre nom *" required="required" data-validation-required-message="Veuillez entrer votre nom." aria-invalid="false">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="Votre email *" required="required" data-validation-required-message="Veuillez entrer votre email." aria-invalid="false">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Votre télépone *" required="required" data-validation-required-message="Veuillez entrer votre téléphone.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Votre message *" required="required" data-validation-required-message="Veuillez entrer votre message.." aria-invalid="false" rows="6"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Envoyer</button>
+                </div>
+              </div>
+            </form>
+          </div>
+    </div>
+  </div>
+</div> 
+
+
+    </div>
+  </div>
+</div>
+   
+ 
+	
+
+<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 panel">
+						<h3 class="panel-title">Supports de developpement</h3>
+						<div class="panel-body">
+							<p><a href="http://api.abyster.com/">APIs</a></p>
+							<p><a href="http://api.abyster.com/index.php/documentation">Documentation</a></p>
+							<p><a href="http://api.abyster.com/index.php/forum">Forum</a></p>
+							<a href="http://api.abyster.com/index.php/forum"></a>
+							<p><a data-toggle="collapse" href="#collapse1">Solutions</a></p>
+
+							<div id="collapse1" class="panel-collapse collapse">
+								<ul class="list-group" style="text-indent:15px; list-style-type: disc;">
+									<li> <p><a href="http://mobilemoney.abyster.com"> Mobile Money</a></p></li>
+									<li> <p><a href="https://automatebills.com"> Automate Bills</a></p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 panel contact"> 
+						<h3 class="panel-title">Contact Info</h4>
+						<div class="panel-body">
+						<p>Direction.</p>
+						<ul>
+						  <li><i class="fa fa-phone"></i> 0033 661212038</li>
+						  <li><a href="#"><i class="fa fa-envelope-o"></i> contact@abyster.com</a></li>
+						  <li><i class="fa fa-flag"></i> Rue Saint Louis, Carrières-Sous-Poissy, FRANCE.</li>
+						</ul> 
+						</div>
+					</div>
+
+					<div class="col-md-3 panel">
+						<h3 class="panel-title">Follow Us</h3>
+						<div class="panel-body">
+							<p class="follow-me-icons">
+								<a href="https://twitter.com/abysterinc"><i class="fa fa-twitter fa-2"></i></a>
+								<a href="https://facebook.com/abysterinc"><i class="fa fa-facebook fa-2"></i></a>
+							</p>	
+						</div>
+					</div>
+			
+				</div> <!-- /row of panels -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="simplenav">
+								<a href="index.php">Accueil</a> | 
+								<a href="services.php">Services</a> |
+								<a href="formation.php">Formations</a> |
+								<a href="portfolio.php">Projets</a> |
+								<a href="listeplugin.php">Plugins</a> |
+								<a href="contact.php">Contact</a> 
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="text-right">
+								Copyright &copy; 2018 SIREN 821 965 209 Num de TVA Intracommunautaire : FR51821965209<a href="http://www.abyster.com" >AByster SAS.</a> All Rights Reserved. | <a href="http://consulting.abyster.com/cgu.php" >CGU.</a>
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of panels -->
+			</div>
+		</div>
+
+	</footer>	
+		
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="assets/js/modernizr-latest.js"></script>
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+	<script src="assets/js/jquery.dataTables.min.js"></script>
+	<script src="assets/js/jquery.cslider.js"></script>
+	<script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+	<script src="assets/js/stripe-paiementplugin.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<!-- Google Maps -->
+	<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>-->
+
+    <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/TweenLite.min.js"></script>
+
+
+  <script>
+
+  $(document).ready(function(){
+    var li=$(".navbar-nav li")[4];
+    $(li).addClass('current');
+  });
+  
+  </script>
+  </body>
+</html>
